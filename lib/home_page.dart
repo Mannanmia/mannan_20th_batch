@@ -23,34 +23,168 @@ class MyHomePage extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                Container(
-                  height: 500,
-                 width: screenwidth,
-                 decoration: BoxDecoration(
-                   border: Border.all(
-                     width: 5,
-                   ),
-                   borderRadius: BorderRadius.circular(100),
-                   image: DecorationImage(
-                     image: NetworkImage(
-                       "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
-                     ),
-                     fit: BoxFit.cover,
-                   ),
-                 ),
-                ),
-                Container(child: Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Container(
+                    height: screenheight,
+                    width: screenwidth,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(80),
+                       image: DecorationImage(
+                         image:
+                           AssetImage(
+                               "assets/image/1st_pic.jpg"
+                           ),fit: BoxFit.cover,
 
-                    Text("Name:"),
-                    Text("Md Mannan Miah"),
-                  ],
+                       ),
+                    ),
+                  ),
                 ),
-                  height: 300,
-                  width: screenwidth,
-        ),
+
+                Text("First Picture of Asset Image ",style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: screenwidth*.08,
+                  color: Colors.black54,
+                ),),
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Container(
+                    height: screenheight,
+                    width: screenwidth,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(80),
+                      image: DecorationImage(
+                        image:
+                        NetworkImage(
+                            "https://media.istockphoto.com/photos/colorful-background-of-pastel-powder-explosionrainbow-color-dust-on-picture-id1180542165?k=20&m=1180542165&s=612x612&w=0&h=43hlhk8qdGYP4V-u3AAxD3kPDRIzHjMNWpr-VdBQ2Js="
+                        ),fit: BoxFit.cover,
+
+                      ),
+                    ),
+                  ),
+                ),
+
+                Text("First Picture of Network Image ",style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: screenwidth*.07,
+                  color: Colors.black87,
+                ),),
+
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Container(
+                    height: screenheight,
+                    width: screenwidth,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(80),
+                      image: DecorationImage(
+                        image:
+                        AssetImage(
+                            "assets/image/2nd_pic.jpg"
+                        ),fit: BoxFit.cover,
+
+                      ),
+                    ),
+                  ),
+                ),
+
+                Text("Second Picture of Asset Image ",style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: screenwidth*.07,
+                  color: Colors.black,
+                ),),
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Container(
+                    height: screenheight,
+                    width: screenwidth,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(80),
+                      image: DecorationImage(
+                        image:
+                        NetworkImage(
+                            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJW7UOffr5f3q45-F2LLMVA_Lw784ohjOMScksKFU0UBJo-iPVqTmk4avYl0q29X6fGS4&usqp=CAU"
+                        ),fit: BoxFit.cover,
+
+                      ),
+                    ),
+                  ),
+                ),
+
+                Text("Second Picture of Network Image ",style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: screenwidth*.065,
+                  color: Colors.black,
+                ),),
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Container(
+                    height: screenheight,
+                    width: screenwidth,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(80),
+                      image: DecorationImage(
+                        image:
+                        AssetImage(
+                            "assets/image/3rd_pic.jpg"
+                        ),fit: BoxFit.cover,
+
+                      ),
+                    ),
+                  ),
+                ),
+
+                Text("Third Picture of Asset Image ",style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: screenwidth*.07,
+                  color: Colors.black38,
+                ),),
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Container(
+                    height: screenheight,
+                    width: screenwidth,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(80),
+                      image: DecorationImage(
+                        image:
+                        AssetImage(
+                            "assets/image/4th_pic.jpg"
+                        ),fit: BoxFit.cover,
+
+                      ),
+                    ),
+                  ),
+                ),
+
+                Text("Fourth Picture of Asset Image ",style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: screenwidth*.07,
+                  color: Colors.black87,
+                ),),
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Container(
+                    height: screenheight,
+                    width: screenwidth,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(80),
+                      image: DecorationImage(
+                        image:
+                        AssetImage(
+                            "assets/image/5th_pic.jpg"
+                        ),fit: BoxFit.cover,
+
+                      ),
+                    ),
+                  ),
+                ),
+
+                Text("Fifth Picture of Asset Image ",style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: screenwidth*.075,
+                ),),
+
 
               ],
             ),
