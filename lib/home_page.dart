@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:untitled/full_image.dart';
 import 'package:untitled/list_view.dart';
+import 'package:untitled/grid_view.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);
@@ -85,7 +86,26 @@ class _MyHomePageState extends State<MyHomePage> {
                       btncolor2 = Colors.red;
                     });
                   },
-                  child: Text("LastClass(14th April)"),
+                  child: Text("List view"),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: SizedBox(
+                height: 50,
+                width: 150,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: btncolor,
+                    shape: StadiumBorder(),
+                  ),
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder:(context)=>GridViewForMe()));
+                    setState(() {
+                    });
+                  },
+                  child: Text("Grid View"),
                 ),
               ),
             ),
