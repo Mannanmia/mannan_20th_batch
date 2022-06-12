@@ -29,7 +29,7 @@ class _GalleryPageState extends State<GalleryPage> {
              Padding(
                 padding: EdgeInsets.only(top:4.0,left:screenwidth*.1,right: screenwidth*.1),
                 child: Container(
-                  height: screenHeight-250,
+                  height: screenHeight-270,
                   width: screenwidth*.8,
                   child: Image.asset(widget.tempImglist[widget.tempIndex],fit: BoxFit.cover,),
                 ),
