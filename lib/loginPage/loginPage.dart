@@ -140,22 +140,19 @@ class _LogInPageState extends State<LogInPage> {
               ),
               ),
             ),
-            Padding(
-              padding: EdgeInsets.only(top: 10,left: 25,right: 25,),
-              child: Container(
-                height: scHeight*.08,
-                width: scWidth,
-                decoration: BoxDecoration(
-                  color: Colors.red,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Center(
-                  child: Text("Log In",style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 25,
-                  ),),
-                ),
+            Container(
+              height: scHeight*.08,
+              width: scWidth,
+              decoration: BoxDecoration(
+                color: Colors.red,
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Center(
+                child: Text("Log In",style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 25,
+                ),),
               ),
             ),
             Padding(
@@ -234,20 +231,7 @@ class _LogInPageState extends State<LogInPage> {
         ),),
         // Padding(
         //
-        //   padding: EdgeInsets.only(top: 10,left: 25,),
-        //   child: Row(
-        //     mainAxisAlignment: MainAxisAlignment.center,
-        //     children: [
-        //       Text("By continuing,you agree to Meta's "),
-        //       Text("Terms of Services,",style: TextStyle(
-        //         fontWeight: FontWeight.bold,
-        //       ),),
-        //       Text("Privacy Policy",style: TextStyle(
-        //         fontWeight: FontWeight.bold,
-        //       ),),
-        //     ],
-        //   ),
-        // ),
+      
             Padding(
               padding:  EdgeInsets.only(top: 20,left: scWidth*.3,right: scWidth*.3),
               child: Divider(color: allColor.textColor,),
